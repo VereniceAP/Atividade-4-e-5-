@@ -1,0 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgba(248, 245, 234, 1);
+}

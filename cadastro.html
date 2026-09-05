@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <header id="header"></header>
+
+    <main>
+
+        <form class="form-cadastro">
+
+            <h2>Cadastre-se</h2>
+
+            <div>
+                <label for="nome">Nome</label>
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="email">E-mail</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="senha">Senha</label>
+                <input
+                    type="password"
+                    id="senha"
+                    name="senha"
+                    placeholder="Digite sua senha"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="confirmarSenha">Confirmar senha</label>
+                <input
+                    type="password"
+                    id="confirmarSenha"
+                    name="confirmarSenha"
+                    placeholder="Confirme sua senha"
+                    required
+                >
+            </div>
+
+            <h3>Endereço</h3>
+
+            <div>
+                <label for="cep">CEP</label>
+                <input
+                    type="text"
+                    id="cep"
+                    name="cep"
+                    placeholder="00000-000"
+                    maxlength="9"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="logradouro">Rua</label>
+                <input
+                    type="text"
+                    id="logradouro"
+                    name="logradouro"
+                    placeholder="Rua"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="numero">Número</label>
+                <input
+                    type="text"
+                    id="numero"
+                    name="numero"
+                    placeholder="Número"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="bairro">Bairro</label>
+                <input
+                    type="text"
+                    id="bairro"
+                    name="bairro"
+                    placeholder="Bairro"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="cidade">Cidade</label>
+                <input
+                    type="text"
+                    id="cidade"
+                    name="cidade"
+                    placeholder="Cidade"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="uf">Estado</label>
+                <input
+                    type="text"
+                    id="uf"
+                    name="uf"
+                    placeholder="UF"
+                    maxlength="2"
+                    required
+                >
+            </div>
+
+            <button type="submit">Criar conta</button>
+
+            <p class="cadastro">
+                Já possui uma conta?
+                <a href="./login.html">Entrar</a>
+            </p>
+
+        </form>
+
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script type="module" src="./js/main.js"></script>
+
+</body>
+
+</html>

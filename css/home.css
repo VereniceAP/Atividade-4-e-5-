@@ -1,0 +1,35 @@
+.inicio::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("/assets/imagem/hero-natural.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.55;
+    z-index: -1;
+}
+.titulo{
+    
+    color: var(--verde-principal);
+    font-size: 46px;
+    margin-top: 40px;
+}
+.inicio{
+    
+    display: flex;
+    align-items: center ;
+
+    flex-direction: column;
+    padding: 30px;
+
+}
+.text{
+    align-items: center;
+    color: var(--bege-claro);
+    font-size: 24px;
+    width: 800px;
+    margin-top: 40px;
+    text-align: center;
+    
+}

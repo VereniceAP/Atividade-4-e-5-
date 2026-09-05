@@ -1,0 +1,18 @@
+.menu {
+    
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: var(--fundo);
+    margin-top: auto;
+    padding: 24px;
+    
+}
+
+
+.menu a{
+    text-decoration: none;
+    color: var(--verde-principal);
+    font-weight: bold;
+    font-size: 40px;
+}
