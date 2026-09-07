@@ -1,0 +1,80 @@
+.produtos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.produtos h1 {
+    text-align: center;
+    margin-bottom: 35px;
+    color: var(--verde-principal);
+}
+
+#lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card-produto {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+   
+}
+
+.categoria {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--verde-principal);
+    font-weight: bold;
+}
+
+.card-produto h2 {
+    margin: 10px 0;
+    color: var(--verde-principal);
+}
+
+.card-produto p {
+    line-height: 1.5;
+    flex-grow: 1;
+    margin-bottom: 8px;
+}
+
+.card-produto strong {
+    font-size: 20px;
+    margin: 15px 0;
+    color: var(--verde-principal);    
+}
+
+.imagem-produto {
+   width: 100%;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-conteudo{
+    padding: 12px;
+}
+
+main {
+    padding-top: 80px;
+}
+
+.mulher-img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}

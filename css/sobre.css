@@ -1,18 +1,30 @@
 .cabecario{
+    width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-
 .cabecario h1{
     font-size: 40px;
     color:var(--verde-principal);
-    font-weight: 100;
+    font-weight: 600;
     margin-top: 60px;
     margin-bottom: 12px;
 }
+
+.cabecario-img{
+     width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 12px;
+
+}
+
 .cabecario-text{
     font-size: 24px;
     color: rgb(7, 87, 67);
@@ -28,23 +40,30 @@
 }
 .card-un{
     padding: 34px;
-    border: 1px solid rgb(7, 87, 67);
+    border: 1px solid rgb(186, 154, 23);
     border-radius:24px ;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    gap: 12px;
-    
+    gap: 12px;    
 }
+
 .card-un span{
     display: inline-block;
-    
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--verde-principal);
     margin-bottom: 18px;
+    margin-left: 8px;
 }
+
 .card-un p{
     font-size: 24px;
     color: rgb(15, 53, 15);
+}
+
+.card-un img{
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
 }
 .speak{
     font-size: 24px;

@@ -2,11 +2,16 @@
     content: "";
     position: fixed;
     inset: 0;
-    background-image: url("/assets/imagem/hero-natural.jpg");
+      background:
+        linear-gradient(
+            rgba(70, 120, 80, 0.35),
+            rgba(70, 120, 80, 0.35)
+        ),
+        url("/assets/imagem/hero-natural.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    opacity: 0.55;
+    opacity: 0.65;
     z-index: -1;
 }
 .titulo{
@@ -26,10 +31,45 @@
 }
 .text{
     align-items: center;
-    color: var(--bege-claro);
+    color: var(--verde-principal);
     font-size: 24px;
     width: 800px;
     margin-top: 40px;
     text-align: center;
     
+}
+
+.btn-produtos {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 14px 28px;
+
+    background: var(--verde-principal);
+    color: white;
+
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    transition: all 0.3s ease;
+}
+
+.btn-produtos span {
+    font-size: 22px;
+    transition: transform 0.3s ease;
+}
+
+.btn-produtos:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.2);
+}
+
+.btn-produtos:hover span {
+    transform: translateX(5px);
 }
