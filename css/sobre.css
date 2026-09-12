@@ -1,52 +1,58 @@
-.cabecario{
-    width: 1200px;
+
+.cabecario {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-.cabecario h1{
+.cabecario h1 {
     font-size: 40px;
-    color:var(--verde-principal);
+    color: var(--verde-principal);
     font-weight: 600;
     margin-top: 60px;
     margin-bottom: 12px;
+    text-align: center;
 }
 
-.cabecario-img{
-     width: 100%;
+.cabecario-img {
+    width: 100%;
+    max-width: 1200px;
     height: 600px;
     object-fit: cover;
     object-position: center 20%;
     display: block;
     border-radius: 10px;
     margin-bottom: 12px;
-
 }
 
-.cabecario-text{
+.cabecario-text {
     font-size: 24px;
     color: rgb(7, 87, 67);
     text-align: center;
-
-    
 }
-.card{
+
+.card {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    
-}
-.card-un{
-    padding: 34px;
-    border: 1px solid rgb(186, 154, 23);
-    border-radius:24px ;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    gap: 12px;    
 }
 
-.card-un span{
+.card-un {
+    padding: 34px;
+    border: 1px solid rgb(186, 154, 23);
+    border-radius: 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    gap: 12px;
+    box-sizing: border-box;
+}
+
+.card-un span {
     display: inline-block;
     font-size: 30px;
     font-weight: 600;
@@ -55,19 +61,118 @@
     margin-left: 8px;
 }
 
-.card-un p{
+.card-un p {
     font-size: 24px;
     color: rgb(15, 53, 15);
 }
 
-.card-un img{
+.card-un img {
     width: 100px;
     height: 100px;
     border-radius: 12px;
 }
-.speak{
+
+.speak {
     font-size: 24px;
     color: rgb(15, 53, 15);
     padding: 20px;
     margin-top: 20px;
+}
+
+
+/* =========================
+   TELAS MENORES
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .cabecario {
+        padding: 0 16px;
+    }
+
+    .cabecario h1 {
+        font-size: 32px;
+        margin-top: 35px;
+    }
+
+    .cabecario-img {
+        height: 350px;
+    }
+
+    .cabecario-text {
+        font-size: 20px;
+    }
+
+    .card {
+        gap: 18px;
+    }
+
+    .card-un {
+        padding: 24px;
+        border-radius: 18px;
+    }
+
+    .card-un span {
+        font-size: 25px;
+        margin-left: 0;
+    }
+
+    .card-un p {
+        font-size: 19px;
+    }
+
+    .speak {
+        font-size: 20px;
+        padding: 15px;
+    }
+}
+
+
+/* =========================
+   CELULARES PEQUENOS
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .cabecario {
+        padding: 0 12px;
+    }
+
+    .cabecario h1 {
+        font-size: 27px;
+        margin-top: 25px;
+    }
+
+    .cabecario-img {
+        height: 250px;
+        border-radius: 8px;
+    }
+
+    .cabecario-text {
+        font-size: 18px;
+    }
+
+    .card-un {
+        padding: 18px;
+        border-radius: 16px;
+    }
+
+    .card-un span {
+        font-size: 22px;
+    }
+
+    .card-un p {
+        font-size: 17px;
+    }
+
+    .card-un img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .speak {
+        font-size: 18px;
+        padding: 20px;
+        margin-top: 12px;
+    }
 }

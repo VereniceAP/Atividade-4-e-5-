@@ -11,6 +11,10 @@ export function renderHeader() {
         <span>Natural Life</span>
             </div>
 
+               <button class="menu-hamburguer" aria-label="Abrir menu">
+                 ☰
+               </button>
+
             <nav class="menu">
 
                 <a href="home.html">Home</a>
@@ -28,5 +32,12 @@ export function renderHeader() {
     `;
 
     document.querySelector("#header").innerHTML = header;
+
+    const botaoMenu = document.querySelector(".menu-hamburguer");
+    const menu = document.querySelector(".menu");
+
+    botaoMenu.addEventListener("click", () => {
+        menu.classList.toggle("ativo");
+    });
 
 }

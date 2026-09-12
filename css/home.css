@@ -73,3 +73,92 @@
 .btn-produtos:hover span {
     transform: translateX(5px);
 }
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+    .inicio {
+        padding: 25px 20px;
+    }
+
+    .titulo {
+        font-size: 38px;
+        margin-top: 30px;
+    }
+
+    .text {
+        width: 100%;
+        max-width: 650px;
+        font-size: 20px;
+    }
+
+    .btn-produtos {
+        padding: 13px 24px;
+        font-size: 16px;
+    }
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    .inicio {
+        padding: 20px 15px;
+    }
+
+    .titulo {
+        font-size: 32px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+    .text {
+        width: 100%;
+        font-size: 18px;
+        line-height: 1.5;
+        margin-top: 10px;
+    }
+
+    .btn-produtos {
+        padding: 12px 20px;
+        font-size: 15px;
+        gap: 8px;
+    }
+
+    .btn-produtos span {
+        font-size: 20px;
+    }
+}
+
+
+/* =========================
+   CELULAR PEQUENO
+========================= */
+
+@media (max-width: 400px) {
+
+    .inicio {
+        padding: 15px 12px;
+    }
+
+    .titulo {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .btn-produtos {
+        padding: 11px 18px;
+        font-size: 14px;
+    }
+}
